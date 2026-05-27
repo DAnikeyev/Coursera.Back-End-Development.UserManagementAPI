@@ -1,0 +1,49 @@
+@HostAddress = http://localhost:5220
+@Token = techhive-internal-token
+
+GET {{HostAddress}}/api/users
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{HostAddress}}/api/users/b4358f6f-8c58-49f1-977b-1cb8af31ac10
+Authorization: Bearer {{Token}}
+
+###
+
+POST {{HostAddress}}/api/users
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "firstName": "Rina",
+  "lastName": "Morris",
+  "email": "rina.morris@techhive.local",
+  "department": "Finance",
+  "isActive": true
+}
+
+###
+
+PUT {{HostAddress}}/api/users/b4358f6f-8c58-49f1-977b-1cb8af31ac10
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "firstName": "Ava",
+  "lastName": "Patel",
+  "email": "ava.patel@techhive.local",
+  "department": "People Operations",
+  "isActive": true
+}
+
+###
+
+DELETE {{HostAddress}}/api/users/68d9f10d-c926-485e-aa3d-6e776778fd7d
+Authorization: Bearer {{Token}}
+@UserManagementAPI_HostAddress = http://localhost:5241
+
+GET {{UserManagementAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

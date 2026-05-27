@@ -81,14 +81,6 @@ Suggested manual edge cases:
 }
 ```
 
-## How Copilot Helped
-
-This project intentionally reflects the activity workflow for using Copilot:
-
-1Copilot generated DTO classes.
-2Copilot suggest validation attributes, middleware structure, and exception handling patterns during debugging.
-3Copilot help generate test cases and sample requests for Postman or `.http` files.
-
 ## Middleware Order
 
 The middleware pipeline follows the requested activity order:

@@ -33,8 +33,10 @@ If you launch from Visual Studio or another profile-aware tool, the browser is c
 The API token is configured in `UserManagementAPI/appsettings.json`:
 
 ```json
-"Authentication": {
-  "Token": "techhive-internal-token"
+{
+  "Authentication": {
+    "Token": "techhive-internal-token"
+  }
 }
 ```
 
@@ -88,3 +90,34 @@ The middleware pipeline follows the requested activity order:
 1. Exception handling middleware
 2. Token authentication middleware
 3. Request/response logging middleware
+
+## How Copilot Supported the Work
+
+Copilot was used throughout development as a support tool rather than as an automatic project builder. Its main value was in speeding up routine work, explaining concepts, and helping refine implementation details while the project decisions and final coding choices remained manual.
+
+### Areas Where It Helped
+
+- **Explaining API design concepts**  
+  It helped connect RESTful ideas to practical endpoint behavior and real-world request/response patterns.
+
+- **Improving maintainability**  
+  It suggested cleaner ways to organize controllers, contracts, models, repositories, and middleware.
+
+- **Assisting during debugging**  
+  It was useful when reviewing validation problems, exception handling behavior, and logging flow.
+
+- **Drafting repetitive code**  
+  It helped produce boilerplate-style code for standard components, especially middleware and similar supporting pieces.
+
+- **Refining written explanations**  
+  It supported the wording of README content, technical descriptions, and architecture-related notes.
+
+### What Remained Developer-Driven
+
+- Copilot did **not** define the project scope or requirements.
+- Copilot did **not** make the final design or architecture decisions.
+- Copilot did **not** independently build the full application.
+- Copilot did **not** replace manual testing, debugging, or understanding of the code.
+
+In this project, Copilot functioned more like a pair-programming assistant: helpful for guidance and productivity, but not a substitute for developer judgment or implementation ownership.
+
